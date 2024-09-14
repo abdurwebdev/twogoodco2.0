@@ -27,33 +27,14 @@ import Pathwayasked from './pages/Pathwayasked';
 import Careersasked from './pages/Careersasked';
 import ScrollToTop from './components/ScrollToTop';
 import ShopCardOne from './pages/ShopCardOne';
-import LocomotiveScroll from 'locomotive-scroll';
-import 'locomotive-scroll/dist/locomotive-scroll.css';
+
 
 const App = () => {
-  const scrollRef = useRef();
-  useEffect(() => {
-    // Initialize Locomotive Scroll
-    const locomotiveScroll = new LocomotiveScroll({
-      el: scrollRef.current,
-      smooth: true,
-      lerp: 0.1,  // Adjust smoothness (0.1 is smooth, 1 is direct)
-    });
 
-    // Update Locomotive Scroll on window resize
-    window.addEventListener('resize', () => {
-      locomotiveScroll.update();
-    });
-
-    return () => {
-      // Cleanup the instance when component unmounts
-      locomotiveScroll.destroy();
-    };
-  }, []);
 
   return (
     <HelmetProvider>
-      <div ref={scrollRef} data-scroll-container>
+      <div>
         <Router>
           <ScrollToTop />
           <Navbar />

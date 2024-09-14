@@ -1,6 +1,4 @@
-import React, { useRef } from 'react'
-
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React from 'react'
 const ReviewMessage = () => {
 
 
