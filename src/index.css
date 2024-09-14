@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: #000;
+}
+
+@font-face {
+  font-family: hell;
+  src: url('../src/assets/HelveticaNowText-Regular.ttf');
+}
+
+@font-face {
+  font-family: fut;
+  src: url('../src/assets/Futura-Bold.ttf');
+}
+
+@font-face {
+  font-family: abc;
+  src: url('../src/assets/abc-social-mono-regular-woff-2-a87e92.ttf');
+}
+
+h1 {
+  font-family: fut;
+}
+
+
+
+h2 {
+  font-family: hell;
+  font-weight: 400;
+  line-height: 21px;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+}
+
+button {
+  font-family: abc;
+  font-size: 12px;
+}
+
+h3 {
+  font-family: abc;
+}
+
+#main-two::after {
+  content: "a";
+  color: white;
+  background-image: url(https://twogood.com.au/filter-animation.svg);
+  background-size: cover;
+  position: absolute;
+  width: 50vw;
+  top: 14vw;
+}
+
+.noscrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.noscrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+
+.swiper-pagination-bullet {
+  background-color: transparent;
+  border: 1px solid #000;
+  opacity: 1;
+  margin: 0 10px;
+  width: 16px;
+  height: 16px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #000;
+  border-color: #000;
+}
+
+.custom-accordion .card-header {
+  background-color: #0080ff;
+  border: none;
+  /* Light background */
+  border-bottom: 2px solid #dee2e6;
+  font-size: 18px;
+}
+
+.custom-accordion .card-body {
+  background-color: #ff0000;
+  /* White body */
+  padding: 20px;
+  color: #333;
+}
+
+.custom-accordion .btn-link {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.custom-accordion .btn-link:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.custom {
+  border: none;
+}
