@@ -36,8 +36,8 @@ const LandingPage = () => {
   return (
     <section data-scroll-section className='w-full  h-auto px-3 overflow-hidden  '>
       <div className='mt-44 main  text-black'>
-        <h1 className='text-[14vw] w-fit h-40 overflow-hidden font-extrabold leading-[10vw] tracking-tighter'>CHANGE</h1>
-        <h1 className='text-[14vw] w-fit overflow-hidden  font-extrabold tracking-tighter leading-[12vw]'>THE COURSE</h1>
+        <h1 className='text-[14vw] w-fit  overflow-hidden font-extrabold tracking-tighter'>CHANGE</h1>
+        <h1 className='text-[14vw]  overflow-hidden  font-extrabold tracking-tighter leading-[14vw]'>THE COURSE</h1>
       </div>
       <div className='mt-10 relative' ref={containerRef}>
         <div ref={cursorRef} className='flex w-28 h-28 absolute top-0 left-0  text-white rounded-full bg-black items-center justify-center'>
